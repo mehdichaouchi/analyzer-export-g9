@@ -4,7 +4,7 @@
 		module="analyzer-export-g9-build"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20180329085814"
+		publication="20180401204117"
 		e:sbtVersion="0.13" e:scalaVersion="2.10"
 	>
 		<description>
