@@ -7,7 +7,7 @@
 		revision="0.1"
 		conf="runtime-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20180328205152"/>
+		date="20180403144732"/>
 	<dependencies>
 		<module organisation="org.scala-lang" name="scala-reflect">
 			<revision name="2.11.8" status="release" pubdate="20160304162641" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.11.8/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="4">
@@ -22,64 +22,64 @@
 			</revision>
 		</module>
 		<module organisation="com.typesafe.play" name="play-json_2.11">
-			<revision name="2.6.7" status="release" pubdate="20171027001143" resolver="maven-central-proxy-releases" artresolver="maven-central-proxy-releases" homepage="https://github.com/playframework/play-json" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="2">
+			<revision name="2.6.7" status="release" pubdate="20171027001143" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/playframework/play-json" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="2">
 				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
-				<metadata-artifact status="successful" details="" size="4478" time="589" location="/Users/mchaouchi/.ivy2/cache/com.typesafe.play/play-json_2.11/ivy-2.6.7.xml" searched="true" original-local-location="/Users/mchaouchi/.ivy2/cache/com.typesafe.play/play-json_2.11/ivy-2.6.7.xml.original" origin-is-local="false" origin-location="http://voddev.canal-plus.io:8081/nexus/content/repositories/public/com/typesafe/play/play-json_2.11/2.6.7/play-json_2.11-2.6.7.pom"/>
+				<metadata-artifact status="no" details="" size="4852" time="0" location="/Users/mchaouchi/.ivy2/cache/com.typesafe.play/play-json_2.11/ivy-2.6.7.xml" searched="false" origin-is-local="false" origin-location="http://voddev.canal-plus.io:8081/nexus/content/repositories/public/com/typesafe/play/play-json_2.11/2.6.7/play-json_2.11-2.6.7.pom"/>
 				<caller organisation="default" name="analyzer-export-g9_2.11" conf="compile, runtime-internal, runtime, optional" rev="2.6.7" rev-constraint-default="2.6.7" rev-constraint-dynamic="2.6.7" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="play-json_2.11" type="jar" ext="jar" status="successful" details="" size="1414406" time="1423" location="/Users/mchaouchi/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.6.7.jar">
+					<artifact name="play-json_2.11" type="jar" ext="jar" status="no" details="" size="1414406" time="0" location="/Users/mchaouchi/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.6.7.jar">
 						<origin-location is-local="false" location="http://voddev.canal-plus.io:8081/nexus/content/repositories/public/com/typesafe/play/play-json_2.11/2.6.7/play-json_2.11-2.6.7.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="com.fasterxml.jackson.datatype" name="jackson-datatype-jsr310">
-			<revision name="2.8.9" status="release" pubdate="20170612070823" resolver="maven-central-proxy-releases" artresolver="maven-central-proxy-releases" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="11">
+			<revision name="2.8.9" status="release" pubdate="20170612070823" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="11">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="successful" details="" size="4533" time="562" location="/Users/mchaouchi/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/ivy-2.8.9.xml" searched="true" original-local-location="/Users/mchaouchi/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/ivy-2.8.9.xml.original" origin-is-local="false" origin-location="http://voddev.canal-plus.io:8081/nexus/content/repositories/public/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.8.9/jackson-datatype-jsr310-2.8.9.pom"/>
+				<metadata-artifact status="no" details="" size="21226" time="0" location="/Users/mchaouchi/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/ivy-2.8.9.xml" searched="false" origin-is-local="false" origin-location="http://voddev.canal-plus.io:8081/nexus/content/repositories/public/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.8.9/jackson-datatype-jsr310-2.8.9.pom"/>
 				<caller organisation="com.typesafe.play" name="play-json_2.11" conf="default, compile, runtime, master" rev="2.8.9" rev-constraint-default="2.8.9" rev-constraint-dynamic="2.8.9" callerrev="2.6.7"/>
 				<artifacts>
-					<artifact name="jackson-datatype-jsr310" type="bundle" ext="jar" status="successful" details="" size="90059" time="576" location="/Users/mchaouchi/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/bundles/jackson-datatype-jsr310-2.8.9.jar">
+					<artifact name="jackson-datatype-jsr310" type="bundle" ext="jar" status="no" details="" size="90059" time="0" location="/Users/mchaouchi/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/bundles/jackson-datatype-jsr310-2.8.9.jar">
 						<origin-location is-local="false" location="http://voddev.canal-plus.io:8081/nexus/content/repositories/public/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.8.9/jackson-datatype-jsr310-2.8.9.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="com.fasterxml.jackson.datatype" name="jackson-datatype-jdk8">
-			<revision name="2.8.9" status="release" pubdate="20170612070811" resolver="maven-central-proxy-releases" artresolver="maven-central-proxy-releases" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="10">
+			<revision name="2.8.9" status="release" pubdate="20170612070811" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="10">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="successful" details="" size="2251" time="555" location="/Users/mchaouchi/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/ivy-2.8.9.xml" searched="true" original-local-location="/Users/mchaouchi/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/ivy-2.8.9.xml.original" origin-is-local="false" origin-location="http://voddev.canal-plus.io:8081/nexus/content/repositories/public/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.8.9/jackson-datatype-jdk8-2.8.9.pom"/>
+				<metadata-artifact status="no" details="" size="20932" time="0" location="/Users/mchaouchi/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/ivy-2.8.9.xml" searched="false" origin-is-local="false" origin-location="http://voddev.canal-plus.io:8081/nexus/content/repositories/public/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.8.9/jackson-datatype-jdk8-2.8.9.pom"/>
 				<caller organisation="com.typesafe.play" name="play-json_2.11" conf="default, compile, runtime, master" rev="2.8.9" rev-constraint-default="2.8.9" rev-constraint-dynamic="2.8.9" callerrev="2.6.7"/>
 				<artifacts>
-					<artifact name="jackson-datatype-jdk8" type="bundle" ext="jar" status="successful" details="" size="33877" time="559" location="/Users/mchaouchi/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/bundles/jackson-datatype-jdk8-2.8.9.jar">
+					<artifact name="jackson-datatype-jdk8" type="bundle" ext="jar" status="no" details="" size="33877" time="0" location="/Users/mchaouchi/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/bundles/jackson-datatype-jdk8-2.8.9.jar">
 						<origin-location is-local="false" location="http://voddev.canal-plus.io:8081/nexus/content/repositories/public/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.8.9/jackson-datatype-jdk8-2.8.9.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="com.fasterxml.jackson.core" name="jackson-databind">
-			<revision name="2.8.9" status="release" pubdate="20170612025351" resolver="maven-central-proxy-releases" artresolver="maven-central-proxy-releases" homepage="http://github.com/FasterXML/jackson" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="9">
+			<revision name="2.8.9" status="release" pubdate="20170612025351" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/FasterXML/jackson" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="9">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="successful" details="" size="5426" time="563" location="/Users/mchaouchi/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/ivy-2.8.9.xml" searched="true" original-local-location="/Users/mchaouchi/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/ivy-2.8.9.xml.original" origin-is-local="false" origin-location="http://voddev.canal-plus.io:8081/nexus/content/repositories/public/com/fasterxml/jackson/core/jackson-databind/2.8.9/jackson-databind-2.8.9.pom"/>
+				<metadata-artifact status="no" details="" size="8156" time="0" location="/Users/mchaouchi/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/ivy-2.8.9.xml" searched="false" origin-is-local="false" origin-location="http://voddev.canal-plus.io:8081/nexus/content/repositories/public/com/fasterxml/jackson/core/jackson-databind/2.8.9/jackson-databind-2.8.9.pom"/>
 				<caller organisation="com.typesafe.play" name="play-json_2.11" conf="default, compile, runtime, master" rev="2.8.9" rev-constraint-default="2.8.9" rev-constraint-dynamic="2.8.9" callerrev="2.6.7"/>
 				<caller organisation="com.fasterxml.jackson.datatype" name="jackson-datatype-jdk8" conf="compile, runtime" rev="2.8.9" rev-constraint-default="2.8.9" rev-constraint-dynamic="2.8.9" callerrev="2.8.9"/>
 				<caller organisation="com.fasterxml.jackson.datatype" name="jackson-datatype-jsr310" conf="compile, runtime" rev="2.8.9" rev-constraint-default="2.8.9" rev-constraint-dynamic="2.8.9" callerrev="2.8.9"/>
 				<artifacts>
-					<artifact name="jackson-databind" type="bundle" ext="jar" status="successful" details="" size="1242477" time="747" location="/Users/mchaouchi/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.8.9.jar">
+					<artifact name="jackson-databind" type="bundle" ext="jar" status="no" details="" size="1242477" time="0" location="/Users/mchaouchi/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.8.9.jar">
 						<origin-location is-local="false" location="http://voddev.canal-plus.io:8081/nexus/content/repositories/public/com/fasterxml/jackson/core/jackson-databind/2.8.9/jackson-databind-2.8.9.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="com.fasterxml.jackson.core" name="jackson-annotations">
-			<revision name="2.8.9" status="release" pubdate="20170612023719" resolver="maven-central-proxy-releases" artresolver="maven-central-proxy-releases" homepage="http://github.com/FasterXML/jackson" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="8">
+			<revision name="2.8.9" status="release" pubdate="20170612023719" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/FasterXML/jackson" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="8">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="successful" details="" size="1848" time="557" location="/Users/mchaouchi/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/ivy-2.8.9.xml" searched="true" original-local-location="/Users/mchaouchi/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/ivy-2.8.9.xml.original" origin-is-local="false" origin-location="http://voddev.canal-plus.io:8081/nexus/content/repositories/public/com/fasterxml/jackson/core/jackson-annotations/2.8.9/jackson-annotations-2.8.9.pom"/>
+				<metadata-artifact status="no" details="" size="6969" time="0" location="/Users/mchaouchi/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/ivy-2.8.9.xml" searched="false" origin-is-local="false" origin-location="http://voddev.canal-plus.io:8081/nexus/content/repositories/public/com/fasterxml/jackson/core/jackson-annotations/2.8.9/jackson-annotations-2.8.9.pom"/>
 				<caller organisation="com.typesafe.play" name="play-json_2.11" conf="default, compile, runtime, master" rev="2.8.9" rev-constraint-default="2.8.9" rev-constraint-dynamic="2.8.9" callerrev="2.6.7"/>
 				<caller organisation="com.fasterxml.jackson.datatype" name="jackson-datatype-jsr310" conf="compile, runtime" rev="2.8.0" rev-constraint-default="2.8.0" rev-constraint-dynamic="2.8.0" callerrev="2.8.9"/>
 				<caller organisation="com.fasterxml.jackson.core" name="jackson-databind" conf="compile, runtime" rev="2.8.0" rev-constraint-default="2.8.0" rev-constraint-dynamic="2.8.0" callerrev="2.8.9"/>
 				<artifacts>
-					<artifact name="jackson-annotations" type="bundle" ext="jar" status="successful" details="" size="55784" time="553" location="/Users/mchaouchi/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.8.9.jar">
+					<artifact name="jackson-annotations" type="bundle" ext="jar" status="no" details="" size="55784" time="0" location="/Users/mchaouchi/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.8.9.jar">
 						<origin-location is-local="false" location="http://voddev.canal-plus.io:8081/nexus/content/repositories/public/com/fasterxml/jackson/core/jackson-annotations/2.8.9/jackson-annotations-2.8.9.jar"/>
 					</artifact>
 				</artifacts>
@@ -93,15 +93,15 @@
 			</revision>
 		</module>
 		<module organisation="com.fasterxml.jackson.core" name="jackson-core">
-			<revision name="2.8.9" status="release" pubdate="20170612024341" resolver="maven-central-proxy-releases" artresolver="maven-central-proxy-releases" homepage="https://github.com/FasterXML/jackson-core" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="7">
+			<revision name="2.8.9" status="release" pubdate="20170612024341" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/FasterXML/jackson-core" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="7">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="successful" details="" size="5415" time="577" location="/Users/mchaouchi/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/ivy-2.8.9.xml" searched="true" original-local-location="/Users/mchaouchi/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/ivy-2.8.9.xml.original" origin-is-local="false" origin-location="http://voddev.canal-plus.io:8081/nexus/content/repositories/public/com/fasterxml/jackson/core/jackson-core/2.8.9/jackson-core-2.8.9.pom"/>
+				<metadata-artifact status="no" details="" size="7423" time="0" location="/Users/mchaouchi/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/ivy-2.8.9.xml" searched="false" origin-is-local="false" origin-location="http://voddev.canal-plus.io:8081/nexus/content/repositories/public/com/fasterxml/jackson/core/jackson-core/2.8.9/jackson-core-2.8.9.pom"/>
 				<caller organisation="com.typesafe.play" name="play-json_2.11" conf="default, compile, runtime, master" rev="2.8.9" rev-constraint-default="2.8.9" rev-constraint-dynamic="2.8.9" callerrev="2.6.7"/>
 				<caller organisation="com.fasterxml.jackson.datatype" name="jackson-datatype-jdk8" conf="compile, runtime" rev="2.8.9" rev-constraint-default="2.8.9" rev-constraint-dynamic="2.8.9" callerrev="2.8.9"/>
 				<caller organisation="com.fasterxml.jackson.datatype" name="jackson-datatype-jsr310" conf="compile, runtime" rev="2.8.9" rev-constraint-default="2.8.9" rev-constraint-dynamic="2.8.9" callerrev="2.8.9"/>
 				<caller organisation="com.fasterxml.jackson.core" name="jackson-databind" conf="compile, runtime" rev="2.8.9" rev-constraint-default="2.8.9" rev-constraint-dynamic="2.8.9" callerrev="2.8.9"/>
 				<artifacts>
-					<artifact name="jackson-core" type="bundle" ext="jar" status="successful" details="" size="282633" time="599" location="/Users/mchaouchi/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.8.9.jar">
+					<artifact name="jackson-core" type="bundle" ext="jar" status="no" details="" size="282633" time="0" location="/Users/mchaouchi/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.8.9.jar">
 						<origin-location is-local="false" location="http://voddev.canal-plus.io:8081/nexus/content/repositories/public/com/fasterxml/jackson/core/jackson-core/2.8.9/jackson-core-2.8.9.jar"/>
 					</artifact>
 				</artifacts>
@@ -132,12 +132,12 @@
 			</revision>
 		</module>
 		<module organisation="com.typesafe.play" name="play-functional_2.11">
-			<revision name="2.6.7" status="release" pubdate="20171027001129" resolver="maven-central-proxy-releases" artresolver="maven-central-proxy-releases" homepage="https://github.com/playframework/play-json" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="3">
+			<revision name="2.6.7" status="release" pubdate="20171027001129" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/playframework/play-json" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="3">
 				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
-				<metadata-artifact status="successful" details="" size="1540" time="561" location="/Users/mchaouchi/.ivy2/cache/com.typesafe.play/play-functional_2.11/ivy-2.6.7.xml" searched="true" original-local-location="/Users/mchaouchi/.ivy2/cache/com.typesafe.play/play-functional_2.11/ivy-2.6.7.xml.original" origin-is-local="false" origin-location="http://voddev.canal-plus.io:8081/nexus/content/repositories/public/com/typesafe/play/play-functional_2.11/2.6.7/play-functional_2.11-2.6.7.pom"/>
+				<metadata-artifact status="no" details="" size="2686" time="0" location="/Users/mchaouchi/.ivy2/cache/com.typesafe.play/play-functional_2.11/ivy-2.6.7.xml" searched="false" origin-is-local="false" origin-location="http://voddev.canal-plus.io:8081/nexus/content/repositories/public/com/typesafe/play/play-functional_2.11/2.6.7/play-functional_2.11-2.6.7.pom"/>
 				<caller organisation="com.typesafe.play" name="play-json_2.11" conf="default, compile, runtime, master" rev="2.6.7" rev-constraint-default="2.6.7" rev-constraint-dynamic="2.6.7" callerrev="2.6.7"/>
 				<artifacts>
-					<artifact name="play-functional_2.11" type="jar" ext="jar" status="successful" details="" size="411045" time="612" location="/Users/mchaouchi/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.6.7.jar">
+					<artifact name="play-functional_2.11" type="jar" ext="jar" status="no" details="" size="411045" time="0" location="/Users/mchaouchi/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.6.7.jar">
 						<origin-location is-local="false" location="http://voddev.canal-plus.io:8081/nexus/content/repositories/public/com/typesafe/play/play-functional_2.11/2.6.7/play-functional_2.11-2.6.7.jar"/>
 					</artifact>
 				</artifacts>
