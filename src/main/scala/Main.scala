@@ -23,16 +23,8 @@ object Main extends App {
   val start = now.minusDays(1).withHourOfDay(6).withMinuteOfHour(0).withSecondOfMinute(0).withMillisOfSecond(0)
   val end = now.plusDays(8).withHourOfDay(6).withMinuteOfHour(0).withSecondOfMinute(0).withMillisOfSecond(0)
 
-  println(s"coucou Coco & Cocotte")
-
-  //val fileToOpen = File("/Users/mchaouchi/workspace/utils/scripts/reload/broadcasts_a_sorted")
   val fileToOpen = File("/tmp/broadcast.txt")
   val data = fileToOpen.lineIterator
-
-  /*
-  val fileEpgIds = File("")
-  val epgIds = Json.parse(fileEpgIds.contentAsString).as[Seq[JsString]].map(_.toString())
-  */
 
   val mapEpgIdData: Map[String, Seq[G9Data]] = data.map{ line =>
     val infos = line.split(";")
@@ -41,8 +33,33 @@ object Main extends App {
 
   var nbTrous = 0
 
+  def gapExist(data1: Either[G9Data,DateTime], data2: G9Data, epgId: String, mode: String = ""): Unit = {
+    data1 match {
+      case Left(g9Date) =>
+        if(g9Date.endDate != data2.startDate){
+          println(s"Trou dans la grille sur l'epgId $epgId entre ${g9Date.idKey} (${g9Date.endDate}) & ${data2.idKey} (${data2.startDate})")
+          nbTrous += 1
+        }
+
+      case Right(dateTime) if mode == "start" =>
+        if(dateTime != data2.startDate){
+          println(s"Trou dans la grille sur l'epgId $epgId entre début de période & ${data2.idKey} (${data2.startDate})")
+          nbTrous += 1
+        }
+
+
+      case Right(dateTime) if mode == "end" =>
+        if(data2.endDate != dateTime){
+          println(s"Trou dans la grille sur l'epgId $epgId entre ${data2.idKey} (${data2.startDate}) & fin de période")
+          nbTrous += 1
+        }
+    }
+  }
+
   val listeEpgIdsTrou = mapEpgIdData.flatMap{ case (epgId, g9datas) =>
     val sizeOfG9Datas = g9datas.size
+
+    gapExist(Right(start), g9datas.head, epgId, "start")
 
     var x = 0
     val etatNbTrous = nbTrous
@@ -50,12 +67,11 @@ object Main extends App {
       val g9Data1 = g9datas(x)
       val g9Data2 = g9datas(x + 1)
 
-      if(g9Data1.endDate != g9Data2.startDate){
-        println(s"Trou dans la grille sur l'epgId $epgId entre ${g9Data1.idKey} (${g9Data1.endDate}) & ${g9Data2.idKey} (${g9Data2.startDate})")
-        nbTrous += 1
-      }
+      gapExist(Left(g9Data1), g9Data2, epgId)
       x += 1
     }
+
+    gapExist(Right(end), g9datas.last, epgId, "end")
 
     if(etatNbTrous != nbTrous) Some(epgId)
     else None
